@@ -10,16 +10,13 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
     <!-- Main Content begins -->
     <main>
         <!-- Section: Street Tacos -->
         <section id="street-tacos">
             <h1>Street Tacos</h1>
-            <menu id="main-action-buttons">
-                <button>
+            <ul id="main-actions">
+                <li>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -29,8 +26,8 @@
                         <line x1="12" y1="4" x2="12" y2="16" />
                     </svg>
                     Save
-                </button>
-                <button>
+                </li>
+                <li>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -42,8 +39,8 @@
                         <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
                     </svg>
                     Share
-                </button>
-                <button>
+                </li>
+                <li>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -53,8 +50,8 @@
                         <rect x="7" y="13" width="10" height="8" rx="2" />
                     </svg>
                     Print
-                </button>
-                <button>
+                </li>
+                <li>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-symlink" width="40"
                         height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -65,8 +62,8 @@
                         <path d="M5 11v-6a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-9.5" />
                     </svg>
                     Jump to Recipe
-                </button>
-            </menu>
+                </li>
+            </ul>
             <img src="/images/street-tacos.png" alt="Street tacos on a plate" />
             <p>Street tacos are delicious, amazing, and oh so mouthwatering! Bite into tender steak, zesty lime flavor
                 with a hint of spice and add on tomatoes, avocado, and onions for a savory bite you are going to love!
@@ -126,14 +123,19 @@
                 </li>
             </ol>
         </section>
-        <!-- Aside: Article links -->
-        <aside id="article-links">
+        <!-- Aside: Section links -->
+        <aside id="section-links">
             <h2>Need Some Side Dishes?</h2>
-            <article>
-                <h3>Mexican Rice</h3>
-                <img src="/images/mexican-rice.png" alt="Mexican Rice" />
-                <p>Traditional recipe with a twist.</p>
-                <p class="star-rating-label">Rating</p>
+            <!-- Section: Mexican Rice -->
+            <section>
+                <a href="#"></a><img src="/images/mexican-rice.png" alt="Tortillas"/></a>
+                <h3><a href="#">Mexican Rice</a></h3>
+                    <p>Traditional recipe with a twist.</p>
+                <h4 class="star-rating">Rating</h4>
+                <dl>
+                    <dt>Rating</dt>
+                    <dd>4 of 5 stars</dd>
+                </dl>
                 <div class="stars" aria-label="4 out of 5 stars">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
                         height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
@@ -171,12 +173,65 @@
                             d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
                     </svg>
                 </div>
-            </article>
-            <article>
-                <h3>Salsa</h3>
-                <img src="/images/salsa.png" alt="Salsa" />
-                <p>Just the right amount of spice.</p>
-                <p class="star-rating-label">Rating</p>
+            </section>
+            <!-- Section: Salsa -->
+            <section>
+                <a href="#"></a><img src="/images/salsa.png" alt="Tortillas"/></a>
+                <h3><a href="#">Salsa</a></h3>
+                    <p>Just the right amount of spice.</p>
+                <h4 class="star-rating">Rating</h4>
+                <dl>
+                    <dt>Rating</dt>
+                    <dd>5 of 5 stars</dd>
+                </dl>
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                    </svg>
+                </div>
+            </section>
+            <!-- Section: Guacamole -->
+            <section>
+                <a href="#"></a><img src="/images/guacamole.png" alt="Tortillas"/></a>
+                <h3><a href="#">Guacamole</a></h3>
+                    <p>Fresh and healthy.</p>
+                <h4 class="star-rating">Rating</h4>
+                <dl>
+                    <dt>Rating</dt>
+                    <dd>4 of 5 stars</dd>
+                </dl>
                 <div class="stars" aria-label="4 out of 5 stars">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
                         height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
@@ -214,12 +269,17 @@
                             d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
                     </svg>
                 </div>
-            </article>
-            <article>
-                <h3>Guacamole</h3>
-                <img src="/images/guacamole.png" alt="Guacamole" />
-                <p>Fresh and healthy.</p>
-                <p class="star-rating-label">Rating</p>
+            </section>
+            <!-- Section: Tortillas -->
+            <section>
+                <a href="#"></a><img src="/images/tortillas.png" alt="Tortillas"/></a>
+                <h3><a href="#">Tortillas</a></h3>
+                    <p>Easy to make and so good.</p>
+                <h4 class="star-rating">Rating</h4>
+                <dl>
+                    <dt>Rating</dt>
+                    <dd>4 of 5 stars</dd>
+                </dl>
                 <div class="stars" aria-label="4 out of 5 stars">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
                         height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
@@ -257,52 +317,10 @@
                             d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
                     </svg>
                 </div>
-            </article>
-            <article>
-                <h3>Tortillas</h3>
-                <img src="/images/tortillas.png" alt="Tortillas" />
-                <p>Easy to make and so good.</p>
-                <p class="star-rating-label">Rating</p>
-                <div class="stars" aria-label="4 out of 5 stars">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
-                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
-                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
-                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
-                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20"
-                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                    </svg>
-                </div>
-            </article>
+            </section>
         </aside>
     </main>
+
     <!-- Main Navigation -->
     <nav id="main-nav">
         <h2>Menu</h2>
@@ -322,6 +340,7 @@
             </svg>
         </a>
         <ul>
+            <!-- Navigation: Home -->
             <li><a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen"
                         width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
@@ -390,6 +409,7 @@
             </li>
         </ul>
     </nav>
+
     <!-- Search bar -->
     <h3 class="hidden">Search</h3>
     <input type="search" id="search" placeholder="Find a recipe">
