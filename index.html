@@ -88,57 +88,60 @@
         <section id="details">
             <h2>Details</h2>
             <dl>
-                <dt>Prep Time: </dt>
+                <dt>Prep Time:</dt>
                 <dd>10 minutes</dd>
-                <dt>Cook Time: </dt>
+                <dt>Cook Time:</dt>
                 <dd>10 minutes</dd>
-                <dt>Total Time: </dt>
+                <dt>Total Time:</dt>
                 <dd>20 minutes</dd>
-                <dt>Author: </dt>
+                <dt>Author:</dt>
                 <dd>Taco Cheesington</dd>
-                <dt>Servings: </dt>
+                <dt>Servings:</dt>
                 <dd>6 Tacos</dd>
             </dl>
         </section>
         <!-- Sub-Section: Ingredients -->
-        <section id="ingredients">
-            <h2>Ingredients</h2>
-            <ul>
-                <li>Flank Steak</li>
-                <li>Soy Sauce</li>
-                <li>Worcestershire Sauce</li>
-                <li>Lime</li>
-                <li>Minced Garlic</li>
-                <li>Cilantro</li>
-                <li>Chili Powder</li>
-                <li>Cumin</li>
-                <li>Salt</li>
-                <li>Pepper</li>
-                <li>Corn Tortillas</li>
-            </ul>
-        </section>
-        <!-- Sub-Section: Directions -->
-        <section id="directions">
-            <h2>Directions</h2>
-            <ol>
-                <li>Cut and mix: Cut the flank steak into one inch pieces. In a medium sized bowl add the soy sauce,
-                    Worcestershire, juice from one lime, cilantro, chili powder, cumin, and salt and pepper.
-                </li>
-                <li>Marinate: Add the steak and let marinate in the fridge for 1-2 hours.
-                </li>
-                <li>Cook the meat: Heat a medium sized skillet to medium high heat. Add the steak and marinade and cook
-                    for about 5-7 minutes or until no longer pink.
-                </li>
-                <li>Add toppings: Put the steak in the center of your tortilla with desired toppings.
-                </li>
-            </ol>
-        </section>
+        <div id="main-grid">
+            <section id="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>Flank Steak</li>
+                    <li>Soy Sauce</li>
+                    <li>Worcestershire Sauce</li>
+                    <li>Lime</li>
+                    <li>Minced Garlic</li>
+                    <li>Cilantro</li>
+                    <li>Chili Powder</li>
+                    <li>Cumin</li>
+                    <li>Salt</li>
+                    <li>Pepper</li>
+                    <li>Corn Tortillas</li>
+                </ul>
+            </section>
+            <!-- Sub-Section: Directions -->
+            <section id="directions">
+                <h2>Directions</h2>
+                <ol>
+                    <li>Cut and mix: Cut the flank steak into one inch pieces. In a medium sized bowl add the soy sauce,
+                        Worcestershire, juice from one lime, cilantro, chili powder, cumin, and salt and pepper.
+                    </li>
+                    <li>Marinate: Add the steak and let marinate in the fridge for 1-2 hours.
+                    </li>
+                    <li>Cook the meat: Heat a medium sized skillet to medium high heat. Add the steak and marinade and
+                        cook
+                        for about 5-7 minutes or until no longer pink.
+                    </li>
+                    <li>Add toppings: Put the steak in the center of your tortilla with desired toppings.
+                    </li>
+                </ol>
+            </section>
+        </div>
     </main>
     <!-- Aside: Section links -->
     <aside id="side-dishes">
         <h2>Need Some Side Dishes?</h2>
         <!-- Section: Mexican Rice -->
-        <section class="side-dish">
+        <section class="side-dish" id="mexican-rice">
             <a href="#"><img src="/images/mexican-rice.png" alt="Mexican Rice" /></a>
             <div class="side-dish-text">
                 <h3><a href="#">Mexican Rice</a></h3>
@@ -187,8 +190,8 @@
             </div>
         </section>
         <!-- Section: Salsa -->
-        <section class="side-dish">
-            <a href="#"><img src="/images/salsa.png" alt="Tortillas" /></a>
+        <section class="side-dish" id="tortillas">
+            <a href="#"><img src="/images/salsa.png" alt="Salsa" /></a>
             <div class="side-dish-text">
                 <h3><a href="#">Salsa</a></h3>
                 <p>Just the right amount of spice.</p>
@@ -236,8 +239,8 @@
             </div>
         </section>
         <!-- Section: Guacamole -->
-        <section class="side-dish">
-            <a href="#"><img src="/images/guacamole.png" alt="Tortillas" /></a>
+        <section class="side-dish" id="guacamole">
+            <a href="#"><img src="/images/guacamole.png" alt="Guacamole" /></a>
             <div class="side-dish-text">
                 <h3><a href="#">Guacamole</a></h3>
                 <p>Fresh and healthy.</p>
@@ -285,7 +288,7 @@
             </div>
         </section>
         <!-- Section: Tortillas -->
-        <section class="side-dish">
+        <section class="side-dish" id="tortillas">
             <a href="#"><img src="/images/tortillas.png" alt="Tortillas" /></a>
             <div class="side-dish-text">
                 <h3><a href="#">Tortillas</a></h3>
@@ -423,7 +426,9 @@
                         <circle cx="12" cy="10" r="3" />
                         <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
                     </svg>
-                    <span>Sign In/Up</span>
+                    <span>Sign In
+                        <span id="up-text">/Up</span>
+                    </span>
                 </a>
             </li>
         </ul>
@@ -447,53 +452,53 @@
             <h2 class="visually-hidden">Connect</h2>
             <h3 class="visually-hidden">Social Media Links</h3>
             <menu id="social">
-                    <li>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
-                                width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                            </svg>
-                            Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
-                                width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <rect x="4" y="4" width="16" height="16" rx="4" />
-                                <circle cx="12" cy="12" r="3" />
-                                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                            </svg>
-                            Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
-                                width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <rect x="3" y="5" width="18" height="14" rx="4" />
-                                <path d="M10 9l5 3l-5 3z" />
-                            </svg>
-                            YouTube
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
-                                width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
-                            </svg>
-                            Tik Tok
-                        </a>
-                    </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="3" y="5" width="18" height="14" rx="4" />
+                            <path d="M10 9l5 3l-5 3z" />
+                        </svg>
+                        YouTube
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                        </svg>
+                        Tik Tok
+                    </a>
+                </li>
             </menu>
         </section>
         <!-- Section: Copyright -->
